@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='favicon.png'>
+	<link rel='stylesheet' href='global.css'>
+
+</head>
+
+<body>
+	<h1>Widget Loader</h1>
+
+	<div id="widget-id-1" data-widget-type="image">Output of the image type: </div>
+	<div id="widget-id-2" data-widget-type="hello-world" data-widget-name="Tapsell">Output of the Hello-world type with
+		name: </div>
+	<div id="widget-id-3" data-widget-type="hello-world">Output of the Hello-world type without name: </div>
+	<div>
+		<h1>Nested div</h1>
+		<div id="widget-id-4" data-widget-type="image">
+			<div id="widget-id-5" data-widget-type="hello-world">
+
+			</div>
+		</div>
+		<span>
+			<div id="widget-id-6" data-widget-type="hello-world" data-widget-name="navid">
+
+			</div>
+		</span>
+	</div>
+
+	<script src='widget-loader.js'></script>
+	<script type='text/javascript'>
+		window.myLibrary.configManually();
+	</script>
+</body>
+
+</html>
